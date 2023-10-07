@@ -1,0 +1,47 @@
+* {
+  margin: 0px;
+  padding: 0px;
+  box-sizing: border-box;
+  font-family: Helvetica;
+}
+
+.input {
+  width: 100%;
+  padding: 10
+}
+
+.claim-form {
+  width: 100%;
+}
+
+.name {
+  width: 100%;
+  font-size: 20px;
+  border-radius: 20;
+  height: 50px;
+  border: 2;
+}
+
+.whatsapp_number {
+  width: 100%;
+  font-size: 20px;
+  border-radius: 20;
+  height: 50px;
+  border: 2;
+}
+
+.bill {
+  width: 100%;
+  font-size: 20px;
+  border-radius: 20;
+  height: 50px;
+}
+
+button {
+  height: 50px;
+}
+
+
+.help_text {
+  color: red
+}
