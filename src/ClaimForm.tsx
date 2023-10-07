@@ -14,7 +14,7 @@ export type TformData = {
 
 function ClaimForm({ setSuccess }: { setSuccess: React.Dispatch<React.SetStateAction<boolean>> }) {
   const [file, setFile] = useState<File>()
-
+  const [disabled, setDisabled] = useState(false)
 
   const formik = useFormik<TformData>({
     initialValues: {
@@ -60,6 +60,7 @@ function ClaimForm({ setSuccess }: { setSuccess: React.Dispatch<React.SetStateAc
         )
     }),
     onSubmit: async (values: TformData) => {
+      setDisabled(true)
       let formdata = new FormData()
       let Data = {
         name: values.name,
@@ -141,7 +142,7 @@ function ClaimForm({ setSuccess }: { setSuccess: React.Dispatch<React.SetStateAc
         <p className='help_text'>{formik.touched.bill && formik.errors.bill ? String(formik.errors.bill) : ""}</p>
         {/* @ts-ignore */}
         {formik.values.bill && <img alt="Document attached but Preview not available" src={formik.values.bill && URL.createObjectURL(formik.values.bill)} />}
-        <button className='text-white fs-4 my-4 bg-dark rounded border-1 ' type="submit">Submit</button>
+        <button disabled={disabled} className='text-white fs-4 my-4 bg-dark rounded border-1 ' type="submit">Submit</button>
       </form>
     </div>
   )
