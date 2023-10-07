@@ -142,7 +142,7 @@ function ClaimForm({ setSuccess }: { setSuccess: React.Dispatch<React.SetStateAc
         <p className='help_text'>{formik.touched.bill && formik.errors.bill ? String(formik.errors.bill) : ""}</p>
         {/* @ts-ignore */}
         {formik.values.bill && <img alt="Document attached but Preview not available" src={formik.values.bill && URL.createObjectURL(formik.values.bill)} />}
-        <button disabled={disabled} className='text-white fs-4 my-4 bg-dark rounded border-1 ' type="submit">Submit</button>
+        <button disabled={disabled} className='text-white fs-4 my-4 bg-dark rounded border-1 ' type="submit">{disabled ? "Saving..." : "Submit"}</button>
       </form>
     </div>
   )
