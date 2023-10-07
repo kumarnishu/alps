@@ -94,6 +94,7 @@ function ClaimForm({ setSuccess }: { setSuccess: React.Dispatch<React.SetStateAc
 
         <p className='fs-6 p-1'>Whatsapp Number *</p>
         <input
+          type="number"
           className='rounded p-2 whatsapp_number'
           placeholder='Enter your 10 digit Whatsapp Number'
 
