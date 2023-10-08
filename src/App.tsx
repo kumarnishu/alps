@@ -16,7 +16,7 @@ function App() {
         </>
           :
           <div className="d-flex flex-column justify-content-center pt-4 mt-4">
-            <p className="logoTitle mx-auto fs-6 text-center text-success  pb-4 align-items-center">You Will soon get an update on whatsapp about your availed points</p>
+            <p className="logoTitle mx-auto fs-4 text-center text-success  pb-4 align-items-center">You Will soon get an update on whatsapp about your availed points</p>
           </div>
       }
 

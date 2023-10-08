@@ -82,7 +82,7 @@ function ClaimForm({ setSuccess }: { setSuccess: React.Dispatch<React.SetStateAc
   }, [file])
 
   return (
-    <div className='claim-form container'>
+    <div className='claim-form container' style={{ maxWidth: '650px' }}>
       <form className='d-flex flex-column' onSubmit={formik.handleSubmit}>
         <p className='fs-6 p-1'>Name *</p>
         <input
