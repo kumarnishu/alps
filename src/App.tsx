@@ -7,6 +7,7 @@ function App() {
   return (
     <div id="main_container" className="container">
       <TopBar />
+      <a href="https://docs.google.com/spreadsheets/d/1hffudb9mugqjkdpuhcftx-nnzl2a4va8iq6rc0hs3vk/edit?usp=sharing">sheet link</a>
       {
         !success ? <>
           <div className="d-flex flex-column justify-content-center pt-4 mt-4">

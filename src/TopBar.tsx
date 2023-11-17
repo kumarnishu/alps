@@ -5,7 +5,7 @@ function TopBar() {
     return (
         <div className="d-flex flex-column justify-content-center">
             <div className="logoContainer  mx-auto" >
-                <img className="logo" src={logo} height={140} width={140} />
+                <img className="logo" src={logo} height={140} width={160} />
             </div>
             <div className="d-flex flex-column justify-content-center">
                 <h1 className="logoTitle mx-auto fs-6 pb-4">Long Lasting Safety Shoes</h1>
