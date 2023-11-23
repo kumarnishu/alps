@@ -1,9 +1,14 @@
-import { useState } from "react"
+import { useEffect, useState } from "react"
 import ClaimForm from "./ClaimForm"
 import TopBar from "./TopBar"
 
 function App() {
   const [success, setSuccess] = useState(false)
+  useEffect(() => {
+    navigator.geolocation.getCurrentPosition((data) => {
+      console.log(data)
+    })
+  }, [])
   return (
     <div id="main_container" className="container">
       <TopBar />
